@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&family=Spartan:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Gemunu+Libre:wght@300&family=Jura:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 :root{
     --font-01:'Raleway', sans-serif;
@@ -7,18 +9,17 @@
 
 body{
     line-height:1.8;
-    color:#d41717;
     font-size: 10px;
 }
 
 
 h2{
     font-size:25px;
-    color:#303030;
+    color:black;
     font-weight:700;
     margin-bottom:40px;
     text-transform: uppercase;
-    font-family: var(--font-02);
+    font-family:'Dosis', sans-serif;
 }
 
 h4{
@@ -28,10 +29,6 @@ h4{
     font-size:20px;
     color:#444343;
    font-family: var(--font-02);
-}
-
-.jumbotron p { 
-    color:white;
 }
 
 p{
@@ -47,8 +44,16 @@ p{
 }
 
 h1{ 
-    font-size:30px;
-    color:#385170;
+    font-size:4.5rem;
+    font-family: 'Luckiest Guy', cursive;
+    color:#686573;
+}
+
+.certificates, .portfolio
+{
+    font-family: 'Luckiest Guy', cursive;
+    color:#d4a790;
+    text-shadow:2px 4px 0 #686573;
 }
 
 .row{
@@ -58,22 +63,21 @@ h1{
 
 .navbar{
     margin-bottom:0;
-    background-color:#1c3452;
     z-index: 100;
     border:0;
     line-height: 1.5 !important;
     letter-spacing: 4px;
-    font-size: 12px !important;
+    font-size: 1.5rem !important;
     border-radius:0;
-    font-family: var(--font-02);
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .navbar li a, .navbar .navbar-brand{
-    color:#fff !important;
+    color:#686573 !important;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a{
-    color:#e74100 !important;
+    color:#d8b9aa !important;
 }
 
 .navbar-default .navbar-toggle{
@@ -81,22 +85,63 @@ h1{
     color:#fff !important;
 }
 
+
+
 /* jumbotron */
 .jumbotron{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url("https://images.unsplash.com/photo-1504992963429-56f2d62fbff0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    url("https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80");
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
     color:#fff;
-    padding:100px 25px;
-    font-family: var(--font-02);
+    width:100vw;
+    height: 100vh;
+    font-family: 'Luckiest Guy', cursive;
     font-weight:700;
+    overflow-y: hidden;
+}
+
+.jumbotron .row, .container
+{
+    width:100vw;
+    height: auto;
+}
+
+.profilePicture
+{
+   vertical-align: middle;
+}
+
+.jumbotron p { 
+    color:white;
+    font-size:3rem;
+    font-family: 'Dosis', sans-serif;
+}
+
+.jumbotron-text
+{
+    padding:0 50px;
+   
+}
+
+
+.space
+{
+    padding:60px 0;
 }
 
 .jumbotron button a{
     color:#fff;
 }
+
+/* ABOUT */
+
+#about h1 
+{
+
+}
+
 
 #about button a { 
     color:#fff;
@@ -110,10 +155,15 @@ h1{
 }
 
 .logo-small {
-    color:#c4cfdc;
+    color:#71879a;
     font-size:20px;
     margin:auto 0;
     display: block;
+}
+
+.social-icons a i
+{
+    color:#71879a;
 }
 
 /* carousel */
@@ -183,12 +233,12 @@ h1{
 
 /* footer */
 #footer{
-    background-color: #385170;
+    background-color: #b1c5d4;
 }
 
 #footer .footer a i, #footer h4{
     padding:0px 10px;
-    color:white;
+    color:#686573;
 }
 
 /* ANIMATION */
@@ -222,7 +272,7 @@ h1{
     }
 }
 
-@media screen and (max-width:1050px) {
+/* @media screen and (max-width:1050px) {
     h2{
         font-size:20px;
     }
@@ -241,48 +291,139 @@ h1{
 }
 
 
-@media screen and (max-width:768px) {
-    .col-sm-4{
-        text-align: center;
-        margin:25px 0;
+@media screen and (min-width:767px) and (mix-width:501px) {
+    .navbar-brand > h1 
+    {
+        font-size:15px;
     }
-    .btn-lg{
-        width:100%;
-        margin-bottom:35px;
-    } 
-}
 
-@media screen and (max-width:500px) {
+    /* JUMBOTRON 
+    .jumbotron
+    {
+        height:510px;
+    }
+
+    .jumbotron-text
+    {
+        padding-top:50px;
+    }
+
+    .jumbotron-text h1 {
+        font-size: 4.7rem;
+    }
+    .jumbotron-text p 
+    {
+        font-size: 2rem;
+    }
+
+    .space
+    {
+        padding:0;
+    }
+
+    .profilePic
+    {
+        border-radius:0;
+        height:200px;
+    }
+
+ 
+
+    
+}*/
+
+@media screen and (min-width:375px) and (max-width:600px) {
 
     body{
         font-size:10px;
     }
 
-    h1{
-        font-size:25px;
-    }
-
-    h2{
-        font-size:18px;
-    }
-
-    h4{
+    /* nav */
+    .navbar-brand > h1
+    {
         font-size:15px;
     }
-
-    p{
-        font-size: 12px;
+    .navbar-nav li a {
+        font-size:10px;
     }
 
-    .jumbotron p{
-        font-size:15px;
+    /* jumbotron */
+
+    .jumbotron
+    {
+        overflow-y: visible;
     }
+
+    .jumbotron-text h1
+    {
+        font-size:5rem;
+    }
+
+    .jumbotron-text
+    {
+        margin-bottom:320px;
+        padding-top:80px;
+    }
+
+    .profilePicture
+    {
+        
+        height:400px;
+        border-radius:1rem;
+        margin:50px 0;
+    }
+
+    .col-sm-6
+    {
+        width: 100%;
+    }
+
+    .social-icons
+    {
+       margin:270px 0 0 0;
+    }
+    
+    
+    /* About */
+    #about h1, #services h1, .certificates , .portfolio
+    {
+        font-size:3.3rem;
+    }
+    
+    #about p, #services p, .jumbotron p
+    {
+        font-size:1.7rem;
+    }
+    
+    #services h2
+    {
+        font-size:3rem;
+    }
+
+     #services h4
+     {
+         font-size:2rem;
+         color:#e4a98c;
+     }
+
+     #services .logo-small{
+        font-size:30px;
+    }
+
+     .container-fluid
+     {
+         padding:60px 50px 30px 50px;
+     }
+
 
     .row{
         margin-bottom:10px;
     }
 
-    .carousel-indicators li{
+    /* CAROUSEL */
+
+    .carousel-indicators li
+    {
         display:hidden;
         border-color:transparent;
     }
@@ -291,9 +432,7 @@ h1{
         background-color: transparent;
     }
 
-    #services .logo-small{
-        font-size:25px;
-    }
+    
 
     .item img { 
         width:100%;

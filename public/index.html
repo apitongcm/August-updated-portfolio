@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Carl's Portfolio</title>
+    <link rel="icon" href="./src/main-icon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="Page" data-spy="scroll" data-target=".navbar" data-offset="60">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-light" style="background-color: #e3f2fd;">
         <div class="container">
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -35,21 +35,58 @@
     
     <!-- JUMBOTRON -->
     <div class="jumbotron text-center">
-        <h1>Carl Marwin J. Apitong</h1>
-        <p>Aspiring Software Developer| Self-Taught Developer|Electronics Engineering| Former Field Supervisor</p>
-        <button class="btn btn-primary btn-lg"><a href="#thesis">Learn More</a></button>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <div class="jumbotron-text">
+                        <h1 class="display-4">Carl Marwin J.<span style="color:#d8b9aa;"> Apitong</span></h1>
+                        <p class="lead">Aspiring Software Developer| Self-Taught Developer|Electronics Engineering| Former Field Supervisor</p>
+                        <button class="btn btn-default btn-lg" style="background-color:#71879a;"><a href="#thesis">Learn More</a></button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img class="profilePicture" src="./src/profilepic.png" alt="my picture" width="100%">
+                </div>
+            </div>
+        </div>  
     </div>
+     <div class="space">
+
+     </div>
+     
+     <!-- SECTION:SOCIAL-MEDIA -->
+
+     <div class="container-fluid my-social text-center">
+        <div class="social-icons footer">
+            <a href="https://twitter.com/ApitongCarl">
+                <i class="fab fa-twitter fa-5x"></i>
+            </a>
+            <a href="https://www.instagram.com/carlmarwin27/">
+                <i class="fab fa-instagram fa-5x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/apitongcm/">
+                <i class="fab fa-linkedin fa-5x"></i>
+            </a>
+            <a href="https://github.com/apitongcm">
+                <i class="fab fa-github fa-5x"></i>
+            </a>
+        </div>
+    </div>
+
+
+
     <!-- SECTION:ABOUT -->
     <div id="about" class="container-fluid">
         <div class="row">
             <div class="col-sm-8">
-                <h1>About</h1>
-                <p>Hello! I am Carl Marwin J. Apitong, an Aspiring Software Engineer and Designer, A technology geek, and an artist. I am a graduate of BS Electronics Engineering and PRC ECT board passer.Iloilo City, PH, 5000.</p>
-                <button class="btn btn-primary btn-lg"><a href="./src/Apitong- Carl-CV.pdf">Download CV</a></button>
+                <h1>A little about me...</h1>
+                <p>GLAD YOU'RE HERE! To introduce myself, I am Carl Marwin J. Apitong. <b>Aspiring Software & Game Developer</b>. A graduate of <b>Electronics Engineering and licensed Electronic Technician.</b> A self-taught developer with solid fundamentals in <b>Vanilla Javascript, C#, and Kotlin.</b> I had experienced being a freelance Arduino programmer and consultant for the research of stem students.</p>
+                <br><p>I am passionate when it comes to crafting or building something from scratch. Especially, in computers, electronics, and software. Curious mind, loves to explore new technology and is willing to learn further.</p>
+                <button class="btn btn-primary btn-lg" style="background-color:#71879a;"><a href="./src/Apitong- Carl-CV.pdf">Download CV</a></button>
             </div>
             <br>
             <div class="col-sm-4 profpic">
-                <img class="profilePic" src="./src/cartoon-art.png" alt="cartoon-art" width="100%">
+                <img class="profilePic" src="./src/graduate.jpg" alt="cartoon-art" width="100%">
             </div>
             <br>
         </div>
@@ -59,11 +96,12 @@
                     <img src="https://pbs.twimg.com/media/E2OKe9oVkAQCXbY?format=jpg&name=large" alt="" width="100%">
                 </div>
                 <div class="col-sm-6 space" >
-                    <h4>Technology Enthusiast</h4>
-                    <p>Passionate with Electronics, Robotics, Technology and Computers.Loves to write code, solving mathematical and logical problems. and having fun in research.</p>
-                    <br>
+                    
                     <h4>Creative Artist</h4>
                     <p>Expressing your thoughts and emotions through art. Let your creative mind go with the flow and build a masterpiece.</p>
+                    <br>
+                    <h4>Technology Enthusiast</h4>
+                    <p>Passionate with Electronics, Robotics, Technology and Computers.Loves to write code, solving mathematical and logical problems. and having fun in research.</p>
                 </div>
             </div>
 
@@ -122,7 +160,7 @@
     </div>
     <!-- CERTIFICATES -->
      <div class="container-fluid text-center bg-gray">
-         <h2>Certificates of learning skills</h2>
+         <h2 class="certificates">Certificates</h2>
          <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
              <!-- Indicator-dots -->
              <ol class="carousel-indicators">
@@ -138,15 +176,16 @@
                  <li data-target="#myCarousel" data-slide-to="9"></li>
                  <li data-target="#myCarousel" data-slide-to="10"></li>
                  <li data-target="#myCarousel" data-slide-to="11"></li>
+                 <li data-target="#myCarousel" data-slide-to="12"></li>
              </ol>
 
              <!-- Wrapper -->
              <div class="carousel-inner" role="listbox">
-                 <div class="item active">
+                <div class="item active">
+                    <img src="./src/Certificates/kotlin.png" alt="Kotlin" width="500" height="400">
+                </div>
+                <div class="item">
                      <img src="./src/Certificates/Self-taught.PNG" alt="Self-Taught" width="500" height="400">
-                 </div>
-                 <div class="item">
-                     <img src="./src/Certificates/html.PNG" alt="HTML" width="500" height="400">
                  </div>
                  <div class="item">
                      <img src="./src/Certificates/css.PNG" alt="CSS" width="500" height="400">
@@ -178,6 +217,9 @@
                  <div class="item">
                      <img src="./src/Certificates/SEO.PNG" alt="SEO" width="500" height="400">
                  </div>
+                 <div class="item">
+                    <img src="./src/Certificates/html.PNG" alt="HTML" width="500" height="400">
+                 </div>
              </div>
                 <!-- Controls -->
              <a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
@@ -195,7 +237,7 @@
 
     <!-- SECTION:PORTFOLIO -->
     <div class="container-fluid text-center bg-gray" id="portfolio">
-        <h2>Portfolio</h2>
+        <h2 class="portfolio">Portfolio</h2>
         <h4>What I have created</h4>
         <div class="row text-center slideanim">
             <div class="col-sm-4">
@@ -271,14 +313,29 @@
                 <p><span class="glyphicon glyphicon-envelope"></span> apitongcm@gmail.com</p>
             </div>
             <div class="col-sm-7">
-                <img src="./src/contact.jpg" alt="contact" width="100%" height="400px">
+                <form>
+                    <div class="form-row">
+                      <div class="col">
+                          <label for="name">Name:</label>
+                        <input type="text" class="form-control" placeholder="Name" id="name">
+                      </div>
+                      <div class="col">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" placeholder="Email" id="email">
+                      </div> 
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comment</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comments"></textarea>
+                      </div>
+                  </form>
             </div>
             </div>
         </div>
     </div>
     <!-- footer -->
     <footer id="footer" class="container-fluid text-center">
-        <div class="social-icons footer">
+        <div class=" footer">
             <a href="https://twitter.com/ApitongCarl">
                 <i class="fab fa-twitter fa-3x"></i>
         
@@ -293,6 +350,7 @@
                 <i class="fab fa-github fa-3x"></i>
             </a>
         </div>
+        <h2>UNDER <br> MAINTENANCE!</h2>
         <h4>&copy; Copyright 2021</h4>
     </footer> 
 
